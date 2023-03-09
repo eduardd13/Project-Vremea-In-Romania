@@ -1,0 +1,99 @@
+/* Customizam Bootstrap */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #2bb686;
+  border-color: #2bb686;
+}
+
+.text-primary {
+  color: #101d42 !important;
+}
+
+.text-secondary {
+  color: #fbb44c !important;
+}
+
+.text-light {
+  color: #eaeaea !important;
+}
+
+.bg-primary {
+  background-color: #141e4c !important;
+}
+
+.bg-secondary {
+  background-color: #dfedf5 !important;
+}
+
+.bg-dark {
+  background-color: #101d42 !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+/* Adaugam font-ul nostru */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Header */
+header {
+  height: 30vh;
+}
+
+.weather-forecast-box > * {
+  flex: 1;
+}
+
+@media (max-width: 576px) {
+  .current-weather img {
+    width: 75px;
+  }
+
+  .weather-forecast img {
+    width: 50px;
+  }
+
+  .weather-forecast .real-feel {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  max-height: 200px; /* setează înălțimea maximă a meniului */
+  overflow-y: auto; /* afișează un scrollbar vertical */
+}
+
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  cursor: default;
+}
+.scroll-to-top.show {
+  pointer-events: all;
+  cursor: pointer;
+  opacity: 1;
+}
